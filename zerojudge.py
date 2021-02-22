@@ -8,8 +8,6 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from time import sleep
 import os
-import shutil
-import requests
 import re
 from bs4 import BeautifulSoup
 
@@ -38,14 +36,14 @@ driver = webdriver.Chrome(chrome_options=options)
 driver.get("http://140.124.182.129/Login")
 
 account = driver.find_elements_by_id('account')
-account[-1].send_keys('zero')
+account[-1].send_keys('zero')                       #account
 password = driver.find_element_by_id("passwd")
-password.send_keys('14222017')
+password.send_keys('14222017')                      #password
 sleep(2)
 password.send_keys(Keys.CONTROL, "\ue007")
 sleep(2)
 
-driver.get('http://140.124.182.129/ShowVClass?vclassid=1')
+driver.get('http://140.124.182.129/ShowVClass?vclassid=1')  #zerojudge course url 要修改這行
 
 soup = BeautifulSoup(driver.page_source, 'lxml')
 #print(soup)
