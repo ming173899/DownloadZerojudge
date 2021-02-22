@@ -17,3 +17,7 @@
 修改完後存檔就可以直接執行
 
 > `python ./zerojudge.py`
+
+結果
+
+![Teaser image](./img/result.png)
