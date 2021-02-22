@@ -1,6 +1,6 @@
 # DownloadZerojudge
 
-##環境安裝
+## 環境安裝
 
 使用anaconda，就可直接使用資料夾裡的zerojudge.yml安裝環境
 
